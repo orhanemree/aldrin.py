@@ -2,7 +2,7 @@ import subprocess
 import os
 import sys
 
-has_pillow = True
+has_pillow = True and sys.platform == "linux"
 try:
     from PIL import Image
 except Exception:
